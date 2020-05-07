@@ -1,0 +1,1 @@
+{"version":3,"file":"bundle.js","sources":["../src/index.js"],"sourcesContent":["import axios from 'axios';\r\nconsole.log(axios);\r\n"],"names":["console","log","axios"],"mappings":";;;;;CACAA,OAAO,CAACC,GAAR,CAAYC,KAAZ;;;;"}
