@@ -5,22 +5,15 @@ import builtins from 'rollup-plugin-node-builtins';
 import globals from 'rollup-plugin-node-globals';
 import babel from 'rollup-plugin-babel';
 // import pkg from './package.json';
-import axios from 'axios';
 
 export default {
   input: 'src/index.js',
   output: {
     file: 'dist/bundle.js',
-    format: 'iife',
+    format: 'umd',
   },
-  external: ['axios'],
   plugins: [
-    commonjs({
-      browser: false,
-      namedExports: {
-        'axios': ['axios']
-      }
-    }),
+    commonjs(),
     resolve({
       browser: true,
       preferBuiltins: false
